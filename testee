@@ -268,14 +268,14 @@ msj_prueba() {
 verify() {
     apt-get install curl -y &>/dev/null
     IP=$(wget -qO- ipv4.icanhazip.com)
-    permited=$(curl -sSL "https://www.dropbox.com/s/pn0otnhbgljlcr2/control")
+    permited=$(curl -sSL "https://raw.githubusercontent.com/DanssBot/Generador-BOT/main/control")
     [[ $(echo $permited | grep "${IP}") = "" ]] && {
         clear
         bot="\n\n\n————————————————————————————\n      ¡IP NO ESTA REGISTRADO! [QUITANDO ACCESO]\n      CONTACTE A: @latamsrc \n————————————————————————————\n\n\n"
         echo -e "\e[1;91m$bot"
 
-        #TOKEN="5429787132:AAH3lN6C9fys4U1ZzYBE802fhEVMsgBwDB8"
-        #URL="https://api.telegram.org/bot$TOKEN/sendMessage"
+        TOKEN="6222435065:AAGIvzgHN8mkP-krjlU-pMoEXA8vOhRdyPY"
+        URL="https://api.telegram.org/bot$TOKEN/sendMessage"
         MSG=" IP NO REGISTRADO o CLONING
 ╔═════ ▓▓ ࿇ ▓▓ ═════╗
 - - - - - - - ×∆× - - - - - - -
