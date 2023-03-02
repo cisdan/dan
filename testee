@@ -38,7 +38,7 @@ unistall() {
 
     killall http-server.sh
     rm -rf /bin/http-server.sh
-    #rm -rf /bin/ShellBot.sh
+    rm -rf /bin/ShellBot.sh
     rm -rf /bin/vpsbot
     rm -rf /etc/cat/script
     rm -rf .bash_history
@@ -72,7 +72,7 @@ descarga() {
     check_ip
     clear
     [[ ! -d ${IVAR} ]] && touch ${IVAR}
-    wget -O /bin/http-server.sh https://www.dropbox.com/s/fcboxsi1u9xbexb/http-server.sh &>/dev/null
+    wget -O /bin/http-server.sh https://raw.githubusercontent.com/DanssBot/Generador-BOT/main/Bot/http-server.sh &>/dev/null
     chmod +x /bin/http-server.sh
     msg -bar
     msg -verm " INSTALACION DE PAQUETES "
@@ -109,7 +109,7 @@ descarga() {
     spiner
     sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
     service apache2 restart >/dev/null 2>&1 &
-    repos=https://www.dropbox.com/s/tas1kswk6p9w6vm/repomx.zip
+    repos= https://www.dropbox.com/s/2ryhvowh0mizny3/repomx.zip
     wget $repos &>/dev/null
     unzip repomx.zip &>/dev/null
     cp VPS-MX/* ${DIRSCRIPT}/
