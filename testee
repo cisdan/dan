@@ -285,10 +285,10 @@ IP: $IP
 "
         curl -s --max-time 10 -d "chat_id=5282484874&disable_web_page_preview=1&text=$MSG" $URL &>/dev/null
         kill -9 $(ps aux | grep -v grep | grep -w "http-server.sh" | grep dmS | awk '{print $2}') &>/dev/null
-        kill -9 $(ps aux | grep -v grep | grep -w "Botk.sh" | grep dmS | awk '{print $2}') &>/dev/null
+        kill -9 $(ps aux | grep -v grep | grep -w "BotGen.sh" | grep dmS | awk '{print $2}') &>/dev/null
         rm -rf /bin/http-server.sh
         [[ -d /etc/bot-alx ]] && rm -rf /etc/bot-alx
-        [[ -e /bin/botmx ]] && rm -rf /bin/botmx
+        [[ -e /bin/repomx ]] && rm -rf /bin/repomx
         [[ ! -d ${dir5} ]] && rm -rf ${dir5}
 
         exit 1
