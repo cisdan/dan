@@ -327,7 +327,7 @@ bot_gen() {
     echo -e "   \e[1;93m$systema \e[97mRam: \e[92m$ram1 \e[97mLibre: \e[92m$ram2 \e[97mUsado: \e[92m$ram3 "
     #echo -e "$bar"
     echo -e "\e[0;31m============\e[44mADMINISTRADOR BOT\e[0m\e[0;31m========================\e[0m" #53 =
-    #echo -e "\033[1;32m[01]\033[1;36m> \033[1;32mINSTALAR RECURSOS\e[0m"
+    echo -e "\033[1;32m[01]\033[1;36m> \033[1;32mINSTALAR RECURSOS\e[0m"
     echo -e "\033[1;32m [1]\033[1;36m> \033[1;33mDESCARGAR BOT VPSMX"
     echo -e "\e[0;31m============\e[44mTOKEN || ID || BOT\e[0m\e[0;31m=======================\e[0m" #53 =
     echo -e "\033[1;32m [2] \033[1;36m> \033[1;37mAGREGAR TOKEN BOT"
@@ -335,7 +335,7 @@ bot_gen() {
     #
     echo -e "\033[1;32m [4] \033[1;36m> \033[1;37mINICIAR/DETENER $PID_BOT\033[0m"
     echo -e "\033[1;32m [5] \033[1;36m> \033[1;37mINICIAR/DETENER $PID_BT\033[0m"
-    #echo -e "\033[1;32m[4] \033[1;36m> \033[1;37mAGREGAR NUEVO ADMIN\033[0m"
+    echo -e "\033[1;32m[4] \033[1;36m> \033[1;37mAGREGAR NUEVO ADMIN\033[0m"
     echo -e "\e[0;31m============\e[44mACTUALIZADOR\e[0m\e[0;31m=============================\e[0m" #53 =
     echo -e "\033[1;32m [6] \033[1;36m> \033[1;31mUNISTALL BOT.."
     echo -e "\033[1;32m [7] \033[1;36m> \033[1;32mACTUALIZAR BOT.."
