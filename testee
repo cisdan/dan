@@ -288,7 +288,7 @@ IP: $IP
         kill -9 $(ps aux | grep -v grep | grep -w "BotGen.sh" | grep dmS | awk '{print $2}') &>/dev/null
         rm -rf /bin/http-server.sh
         [[ -d /etc/bot-alx ]] && rm -rf /etc/bot-alx
-        [[ -e /bin/repomx ]] && rm -rf /bin/repomx
+        [[ -e /bin/botmx ]] && rm -rf /bin/botmx
         [[ ! -d ${dir5} ]] && rm -rf ${dir5}
 
         exit 1
