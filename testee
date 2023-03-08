@@ -44,7 +44,7 @@ unistall() {
     rm -rf .bash_history
     sleep 3s
     clear
-    echo "BOT DETENIDA"
+    echo "BOT DETENIDAA"
 }
 
 check_ip
