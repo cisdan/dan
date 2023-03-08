@@ -38,7 +38,7 @@ unistall() {
 
     killall http-server.sh
     rm -rf /bin/http-server.sh
-    rm -rf /bin/ShellBot.sh
+    #rm -rf /bin/ShellBot.sh
     rm -rf /bin/vpsbot
     rm -rf /etc/cat/script
     rm -rf .bash_history
