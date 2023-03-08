@@ -189,7 +189,7 @@ start_bot() {
 }
 
 startmx2() {
-    unset PIDGEN
+    #unset PIDGEN
     PIDGEN=$(ps aux | grep -v grep | grep "http-server.sh")
     if [[ -z $PIDGEN ]]; then
         screen -dmS generador /bin/http-server.sh -start
