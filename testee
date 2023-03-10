@@ -109,21 +109,11 @@ descarga() {
     spiner
     sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
     service apache2 restart >/dev/null 2>&1 &
-    repos=https://raw.githubusercontent.com/cisdan/dan/main/repomx.zip
+    repos=https://raw.githubusercontent.com/NetVPS/Multi-Script/main/VPS-MX-8.5-Final%20Oficial/VPS-MX.tar.xz
     wget $repos &>/dev/null
-    unzip repomx.zip &>/dev/null
-    cp VPS-MX/* ${DIRSCRIPT}/
-    cp controlador/* ${DIRSCRIPT}/
-    cp herramientas/* ${DIRSCRIPT}/
-    cp protocolos/* ${DIRSCRIPT}/
-    cp tmp/* ${DIRSCRIPT}/
-    chmod +x ${DIRSCRIPT}/*
-    rm -rf repomx.zip
-    rm -rf VPS-MX
-    rm -rf controlador
-    rm -rf herramientas
-    rm -rf protocolos
-    rm -rf tmp
+    tar -xf VPS-MX.tar.xz >/dev/null 2>&1
+    chmod +x VPS-MX.tar.xz >/dev/null 2>&1
+    rm -rf VPS-MX.tar.xz
     sleep 1s
     echo -e "$bar"
     msg -verm " DESCARGANDO ARCHIVOS BOT"
