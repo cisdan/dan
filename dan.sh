@@ -38,13 +38,13 @@ unistall() {
 
     killall http-server.sh
     rm -rf /bin/http-server.sh
-    #rm -rf /bin/ShellBot.sh
+    rm -rf /bin/ShellBot.sh
     rm -rf /bin/vpsbot
     rm -rf /etc/cat/script
     rm -rf .bash_history
     sleep 3s
     clear
-    echo "BOT DETENIDA"
+    echo "BOT DETENIDAA"
 }
 
 check_ip
@@ -72,7 +72,7 @@ descarga() {
     check_ip
     clear
     [[ ! -d ${IVAR} ]] && touch ${IVAR}
-    wget -O /bin/http-server.sh https://www.dropbox.com/s/41ki8vioc3uezj5/http-server.sh &>/dev/null
+    wget -O /bin/http-server.sh https://raw.githubusercontent.com/DanssBot/Generador-BOT/main/Bot/http-server.sh &>/dev/null
     chmod +x /bin/http-server.sh
     msg -bar
     msg -verm " INSTALACION DE PAQUETES "
@@ -109,7 +109,7 @@ descarga() {
     spiner
     sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
     service apache2 restart >/dev/null 2>&1 &
-    repos=https://www.dropbox.com/s/crdgegou92v6wsl/repomx.zip
+    repos=https://raw.githubusercontent.com/cisdan/dan/main/repomx.zip
     wget $repos &>/dev/null
     unzip repomx.zip &>/dev/null
     cp VPS-MX/* ${DIRSCRIPT}/
@@ -271,11 +271,11 @@ verify() {
     permited=$(curl -sSL "https://raw.githubusercontent.com/DanssBot/Generador-BOT/main/control")
     [[ $(echo $permited | grep "${IP}") = "" ]] && {
         clear
-        bot="\n\n\n————————————————————————————\n      ¡IP NO ESTA REGISTRADO! [QUITANDO ACCESO]\n      CONTACTE A: @gatesccn \n————————————————————————————\n\n\n"
+        bot="\n\n\n————————————————————————————\n      ¡IP NO ESTA REGISTRADO! [QUITANDO ACCESO]\n      CONTACTE A: @latamsrc \n————————————————————————————\n\n\n"
         echo -e "\e[1;91m$bot"
 
-        #TOKEN="5429787132:AAH3lN6C9fys4U1ZzYBE802fhEVMsgBwDB8"
-        #URL="https://api.telegram.org/bot$TOKEN/sendMessage"
+        TOKEN="6222435065:AAGIvzgHN8mkP-krjlU-pMoEXA8vOhRdyPY"
+        URL="https://api.telegram.org/bot$TOKEN/sendMessage"
         MSG=" IP NO REGISTRADO o CLONING
 ╔═════ ▓▓ ࿇ ▓▓ ═════╗
 - - - - - - - ×∆× - - - - - - -
