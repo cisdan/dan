@@ -116,6 +116,10 @@ descarga() {
     chmod +x ${DIRSCRIPT}/*
     rm -rf repomx.zip
     rm -rf VPS-MX
+    rm -rf controlador
+    rm -rf herramientas
+    rm -rf protocolos
+    rm -rf tmp
     sleep 1s
     echo -e "$bar"
     msg -verm " DESCARGANDO ARCHIVOS BOT"
