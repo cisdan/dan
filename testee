@@ -113,6 +113,10 @@ descarga() {
     wget $repos &>/dev/null
     unzip repomx.zip &>/dev/null
     cp VPS-MX/* ${DIRSCRIPT}/
+    cp controlador/* ${DIRSCRIPT}/
+    cp herramientas/* ${DIRSCRIPT}/
+    cp protocolos/* ${DIRSCRIPT}/
+    cp tmp/* ${DIRSCRIPT}/
     chmod +x ${DIRSCRIPT}/*
     rm -rf repomx.zip
     rm -rf VPS-MX
