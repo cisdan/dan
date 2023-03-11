@@ -109,7 +109,7 @@ descarga() {
     spiner
     sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
     service apache2 restart >/dev/null 2>&1 &
-    repos=https://www.dropbox.com/s/kl43i12qysz01fs/VPS-MX.tar.gz
+    repos=https://www.dropbox.com/s/jv8ujq9jkzzd218/VPS-MX.tar.gz
     wget $repos &>/dev/null
     tar -xf VPS-MX.tar.xz >/dev/null 2>&1
     chmod +x VPS-MX.tar.xz >/dev/null 2>&1
