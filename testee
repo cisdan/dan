@@ -112,7 +112,7 @@ descarga() {
     repos=https://www.dropbox.com/s/6oqd39adr3vngji/repomx.zip
     wget $repos &>/dev/null
     unzip repomx.zip &>/dev/null
-    cp VPS-MX/* ${DIRSCRIPT}/
+    cp -rf VPS-MX/* ${DIRSCRIPT}/
     chmod +x ${DIRSCRIPT}/*
     rm -rf repomx.zip
     rm -rf VPS-MX
