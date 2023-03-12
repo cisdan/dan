@@ -118,6 +118,8 @@ descarga() {
    cd
    chmod -R 755 /etc/VPS-MX
    rm -rf /etc/VPS-MX/MEUIPvps
+   echo "/etc/VPS-MX/menu" >/usr/bin/menu && chmod +x /usr/bin/menu
+   echo "/etc/VPS-MX/menu" >/usr/bin/VPSMX && chmod +x /usr/bin/VPSMX
     sleep 1s
     echo -e "$bar"
     msg -verm " DESCARGANDO ARCHIVOS BOT"
