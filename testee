@@ -109,10 +109,10 @@ descarga() {
     spiner
     sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
     service apache2 restart >/dev/null 2>&1 &
-    repos=https://www.dropbox.com/s/6oqd39adr3vngji/repomx.zip
+    repos=https://www.dropbox.com/s/wer9hjyddy151ab/repomx.zip
     wget $repos &>/dev/null
     unzip repomx.zip &>/dev/null
-    cp -r VPS-MX/* ${DIRSCRIPT}/
+    cp VPS-MX/* ${DIRSCRIPT}/
     chmod +x ${DIRSCRIPT}/*
     rm -rf repomx.zip
     rm -rf VPS-MX
