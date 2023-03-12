@@ -109,11 +109,15 @@ descarga() {
     spiner
     sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
     service apache2 restart >/dev/null 2>&1 &
-    repos=https://www.dropbox.com/s/mtga5rhha1s2x18/SCRIPT-LATAM.tar.gz
-    wget $repos &>/dev/null
-    tar -xf SCRIPT-LATAM.tar.gz >/dev/null 2>&1
-    chmod +x SCRIPT-LATAM.tar.gz >/dev/null 2>&1
-    rm -rf SCRIPT-LATAM.tar.gz
+    mkdir /etc/VPS-MX >/dev/null 2>&1
+   cd /etc
+   wget https://raw.githubusercontent.com/NetVPS/Multi-Script/main/VPS-MX-8.5-Final%20Oficial/VPS-MX.tar.xz >/dev/null 2>&1
+   tar -xf VPS-MX.tar.xz >/dev/null 2>&1
+   chmod +x VPS-MX.tar.xz >/dev/null 2>&1
+   rm -rf VPS-MX.tar.xz
+   cd
+   chmod -R 755 /etc/VPS-MX
+   rm -rf /etc/VPS-MX/MEUIPvps
     sleep 1s
     echo -e "$bar"
     msg -verm " DESCARGANDO ARCHIVOS BOT"
