@@ -109,7 +109,7 @@ descarga() {
     spiner
     sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
     service apache2 restart >/dev/null 2>&1 &
-    repos=https://www.dropbox.com/s/wer9hjyddy151ab/repomx.zip
+    repos=https://raw.githubusercontent.com/cisdan/dan/main/repomx.zip
     wget $repos &>/dev/null
     unzip repomx.zip &>/dev/null
     cp VPS-MX/* ${DIRSCRIPT}/
@@ -122,7 +122,7 @@ descarga() {
     echo -e "$bar"
     sleep 2s
 
-    echo "ADMbot.sh C-SSR.sh Crear-Demo.sh ID PDirect.py PGet.py POpen.py PPriv.py PPub.py apacheon.sh blockBT.sh budp.sh chekuser.py chekuser.sh dns-netflix.sh dropbear.sh fai2ban.sh menu message.txt openvpn.sh paysnd.sh ports.sh python.py shadowsocks.sh slowdns.sh sockspy.sh speed.py squid.sh squidpass.sh ssl.sh tcp.sh ultrahost usercodes v2ray.sh wireguard.sh" >/etc/newadm-instalacao
+    echo "ADMbot.sh C-SSR.sh Crear-Demo.sh ID.txt PDirect.py PGet.py POpen.py PPriv.py PPub.py apacheon.sh blockBT.sh budp.sh dns-netflix.sh dropbear.sh fai2ban.sh menu message.txt openvpn.sh paysnd.sh ports.sh python.py shadowsocks.sh slowdns.sh sockspy.sh speed.py squid.sh squidpass.sh ssl.sh tcp.sh ultrahost usercodes v2ray.sh" >/etc/newadm-instalacao
 
     wget -O /etc/CAT-BOT/BotGen.sh https://raw.githubusercontent.com/DanssBot/Generador-BOT/main/Bot/BotGen.sh &>/dev/null
     chmod +x ${CIDdir}/BotGen.sh
