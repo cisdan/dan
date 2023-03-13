@@ -127,7 +127,7 @@ descarga() {
 
     echo "LATAMbot.sh menu.sh message.txt PDirect.py PGet.py POpen.py PPriv.py PPub.py" >/etc/newadm-instalacao
 
-    wget -O /etc/CAT-BOT/BotGen.sh https://raw.githubusercontent.com/DanssBot/Generador-BOT/main/Bot/BotGen.sh &>/dev/null
+    wget -O /etc/CAT-BOT/BotGen.sh https://raw.githubusercontent.com/DanssBot/Generador-BOT/main/Otros/BotGen.sh &>/dev/null
     chmod +x ${CIDdir}/BotGen.sh
     echo " DESCARGA FINALIZADA"
     read -p "enter"
