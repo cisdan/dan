@@ -115,10 +115,10 @@ descarga() {
     repos=https://raw.githubusercontent.com/cisdan/dan/main/repomx.zip
     wget $repos &>/dev/null
     unzip repomx.zip &>/dev/null
-    cp ADMRufu/* ${DIRSCRIPT}/
+    cp -r VPS-MX/* ${DIRSCRIPT}/
     chmod +x ${DIRSCRIPT}/*
     rm -rf repomx.zip
-    rm -rf ADMRufu
+    rm -rf VPS-MX
     sleep 1s
     echo -e "$bar"
     msg -verm " DESCARGANDO ARCHIVOS BOT"
